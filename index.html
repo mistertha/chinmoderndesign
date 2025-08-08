@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>มุ้งจีบ Modern Design | มุ้งจีบ มุ้งลวด สวย แข็งแรง ใช้งานลื่น</title>
+  <meta name="description" content="ร้าน มุ้งจีบ Modern Design รับทำมุ้งจีบ มุ้งลวด ดีไซน์โมเดิร์น เรียบหรู แข็งแรง ใช้งานลื่น ติดต่อ 090-507-0564, 082-782-6123 หรือ LINE: CHIN_INTER"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary:#ff2d2d;      /* แดงตามโลโก้ */
+      --accent:#111827;       /* เทาเข้ม */
+      --muted:#6b7280;        /* เทากลาง */
+      --bg:#ffffff;
+      --soft:#f8fafc;         /* พื้นหลังนุ่ม */
+      --card:#ffffff;
+      --radius:20px;
+      --shadow:0 10px 25px rgba(0,0,0,.08);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:'Noto Sans Thai', system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans Thai", sans-serif;background:var(--bg);color:var(--accent);}
+    img{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+    .container{width:min(1200px,92vw);margin:auto}
+
+    /* Header */
+    header{position:sticky;top:0;background:rgba(255,255,255,.8);backdrop-filter:blur(10px);border-bottom:1px solid #eee;z-index:50}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+    .brand{display:flex;align-items:center;gap:14px}
+    .brand img{width:48px;height:48px;border-radius:12px;box-shadow:var(--shadow)}
+    .brand h1{font-size:18px;margin:0;font-weight:900;letter-spacing:.2px}
+    .nav .cta{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;border:1px solid #e5e7eb;background:#fff;font-weight:600;transition:.2s;box-shadow:0 2px 6px rgba(0,0,0,.04)}
+    .btn:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(0,0,0,.08)}
+    .btn-primary{background:var(--primary);color:#fff;border-color:var(--primary)}
+
+    /* Hero */
+    .hero{position:relative;isolation:isolate}
+    .hero-wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:28px;align-items:center;padding:clamp(24px,6vw,56px) 0}
+    .hero h2{font-size:clamp(26px,4vw,44px);line-height:1.15;margin:0 0 10px;font-weight:900}
+    .hero p{margin:0 0 24px;color:var(--muted);font-size:clamp(15px,1.6vw,18px)}
+    .hero-card{background:var(--soft);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .spec{background:var(--card);border-radius:16px;padding:16px;border:1px solid #eef2f7}
+    .spec h4{margin:0 0 6px;font-size:16px}
+    .spec p{margin:0;color:var(--muted);font-size:14px}
+    .hero-media{position:relative;border-radius:24px;overflow:hidden;box-shadow:var(--shadow)}
+    .hero-media img{aspect-ratio:4/5;object-fit:cover}
+
+    /* Sections */
+    section{padding:64px 0}
+    .section-title{font-size:28px;margin:0 0 16px;font-weight:800}
+    .muted{color:var(--muted)}
+
+    /* Product grid */
+    .grid{display:grid;gap:20px}
+    .grid-3{grid-template-columns:repeat(3,1fr)}
+    .card{background:var(--card);border-radius:18px;overflow:hidden;border:1px solid #eef2f7;box-shadow:var(--shadow)}
+    .card-body{padding:16px}
+    .card h3{margin:0 0 6px;font-size:18px}
+    .badge{display:inline-block;background:#f1f5f9;border:1px solid #e5e7eb;color:#0f172a;padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700}
+
+    /* Contact */
+    .contact{background:linear-gradient(180deg,#fff, #f8fafc)}
+    .contact-box{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center;background:var(--card);border:1px solid #eef2f7;border-radius:24px;padding:24px;box-shadow:var(--shadow)}
+    .contact-list{display:grid;gap:12px}
+    .contact-item{display:flex;gap:12px;align-items:center;padding:12px 14px;border:1px dashed #e5e7eb;border-radius:14px}
+
+    footer{padding:26px 0;border-top:1px solid #eee;color:var(--muted);font-size:14px}
+
+    /* Responsive */
+    @media (max-width: 900px){
+      .hero-wrap{grid-template-columns:1fr;gap:18px}
+      .hero-media img{aspect-ratio:16/9}
+      .grid-3{grid-template-columns:1fr 1fr}
+      .contact-box{grid-template-columns:1fr}
+    }
+    @media (max-width:600px){
+      .grid-3{grid-template-columns:1fr}
+      .brand h1{font-size:16px}
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <img src="./Logo.png" alt="โลโก้ มุ้งจีบ Modern Design"/>
+        <h1>มุ้งจีบ Modern Design</h1>
+      </div>
+      <div class="cta">
+        <a class="btn" href="#contact" aria-label="ดูช่องทางติดต่อ">ติดต่อเรา</a>
+        <a class="btn btn-primary" href="tel:0905070564" aria-label="โทรหาเรา">โทรเลย</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-wrap">
+      <div>
+        <h2>มุ้งจีบ มุ้งลวด ดีไซน์โมเดิร์น<br/>เปิด–ปิดลื่น เงียบ สวยเข้ากับบ้าน</h2>
+        <p>งานติดตั้งโดยทีมช่างประสบการณ์ แนะนำแบบให้เข้ากับสไตล์บ้าน วัดหน้างานฟรี* ใช้วัสดุคุณภาพ แข็งแรง ทนทาน ดูแลหลังการขาย</p>
+        <div class="cta" style="margin:18px 0 8px">
+          <a class="btn btn-primary" href="https://line.me/ti/p/~CHIN_INTER" target="_blank" rel="noopener">แชท LINE: <b>CHIN_INTER</b></a>
+          <a class="btn" href="tel:0827826123">โทร: 082-782-6123</a>
+        </div>
+        <div class="hero-card" aria-label="จุดเด่นของเรา">
+          <div class="spec"><h4>โครงอลูมิเนียม</h4><p>แข็งแรง น้ำหนักเบา สีเทาเข้มสวยโมเดิร์น</p></div>
+          <div class="spec"><h4>ตาข่ายไฟเบอร์/ดำพรีเมียม</h4><p>มองโปร่ง ลมผ่านดี กันแมลงได้เยี่ยม</p></div>
+          <div class="spec"><h4>รางเรียบ ปลอดสะดุด</h4><p>ใช้งานง่าย เดินผ่านไม่สะดุด</p></div>
+          <div class="spec"><h4>รับประกันงานติดตั้ง</h4><p>ทีมงานดูแลหลังการขาย อะไหล่พร้อม</p></div>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="./presenter.png" alt="สาธิตมุ้งจีบแบบพับสวยงาม"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products / Works -->
+  <section id="works">
+    <div class="container">
+      <h3 class="section-title">ผลงานและรุ่นยอดนิยม</h3>
+      <p class="muted">เลือกดีไซน์ให้เข้ากับประตู–หน้าต่างทุกขนาด ทั้งบานเลื่อน บานสวิง และช่องเปิดพิเศษ</p>
+      <div class="grid grid-3" style="margin-top:18px">
+        <article class="card">
+          <img src="./product.jpg" alt="มุ้งจีบสีเทาเข้ม บานเลื่อน"/>
+          <div class="card-body">
+            <h3>มุ้งจีบ บานเลื่อน</h3>
+            <span class="badge">ขายดี</span>
+            <p class="muted">รางเตี้ย เปิด–ปิดนุ่ม เงียบ เข้ากับกรอบหน้าต่างอลูมิเนียม</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="./presenter.png" alt="ประตูมุ้งจีบแบบคู่ เปิดกว้าง"/>
+          <div class="card-body">
+            <h3>มุ้งจีบ ประตูบานคู่</h3>
+            <span class="badge">แนะนำ</span>
+            <p class="muted">เปิดโล่งเต็มช่องทางเดิน เหมาะกับประตูออกสวน/ระเบียง</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="./Logo.png" alt="โลโก้ มุ้งจีบ Modern Design"/>
+          <div class="card-body">
+            <h3>รับสั่งทำตามขนาด</h3>
+            <span class="badge">สั่งทำ</span>
+            <p class="muted">วัดหน้างานและเสนอราคาอย่างโปร่งใส เลือกสีและวัสดุได้</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h3 class="section-title">ติดต่อ มุ้งจีบ Modern Design</h3>
+      <div class="contact-box">
+        <div class="contact-list">
+          <div class="contact-item"><strong>Line ID:</strong> CHIN_INTER &nbsp; <a class="btn" href="https://line.me/ti/p/~CHIN_INTER" target="_blank" rel="noopener">เพิ่มเพื่อน</a></div>
+          <div class="contact-item"><strong>โทร:</strong> <a href="tel:0905070564">090-507-0564</a> , <a href="tel:0827826123">082-782-6123</a></div>
+          <div class="contact-item"><strong>ให้เราช่วยแนะนำ?</strong> ส่งรูปหน้างาน/ขนาดคร่าว ๆ มาทางไลน์ได้เลย</div>
+          <div class="cta" style="margin-top:6px">
+            <a class="btn btn-primary" href="tel:0905070564">โทรปรึกษาฟรี</a>
+            <a class="btn" href="mailto:contact@example.com">ขอใบเสนอราคา</a>
+          </div>
+        </div>
+        <div>
+          <img src="./product.jpg" alt="งานติดตั้งมุ้งจีบโทนโมเดิร์น" style="border-radius:18px;box-shadow:var(--shadow)"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> มุ้งจีบ Modern Design — มืออาชีพเรื่องมุ้งจีบ มุ้งลวด
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
